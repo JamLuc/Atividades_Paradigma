@@ -6,7 +6,7 @@ class BMICalculator:
         self.root = root
         self.root.title("Calculadora de IMC")
         
-        # Labels e Entradas
+
         self.height_label = tk.Label(root, text="Altura (m):")
         self.height_label.grid(row=0, column=0, padx=10, pady=5)
         
@@ -19,11 +19,11 @@ class BMICalculator:
         self.weight_entry = tk.Entry(root)
         self.weight_entry.grid(row=1, column=1, padx=10, pady=5)
         
-        # Botão para calcular
+    
         self.calculate_button = tk.Button(root, text="Calcular IMC", command=self.calculate_bmi)
         self.calculate_button.grid(row=2, columnspan=2, pady=10)
         
-        # Label para mostrar resultado
+    
         self.result_label = tk.Label(root, text="", font=("Helvetica", 14))
         self.result_label.grid(row=3, columnspan=2, pady=10)
     
